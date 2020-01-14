@@ -3,7 +3,6 @@ services:
   server:
     build: .
     deploy:
-      replicas: 1980
       restart_policy:
         condition: on-failure
       resources:
