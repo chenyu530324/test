@@ -20,9 +20,9 @@ apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'application'
-apply from: "${rootProject.projectDir}/gradle/findbugs.gradle"
+//apply from: "${rootProject.projectDir}/gradle/findbugs.gradle"
 apply from: "${rootProject.projectDir}/gradle/checkstyle/checkstyle.gradle"
-apply from: "${rootProject.projectDir}/gradle/jacoco.gradle"
+//apply from: "${rootProject.projectDir}/gradle/jacoco.gradle"
 apply from: "${rootProject.projectDir}/gradle/docker-image.gradle"
 
 
