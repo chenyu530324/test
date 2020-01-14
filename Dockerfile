@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-ARG DEPENDENCY=target/dependency
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.thoughtworks.test.Application"]
+ADD build/libs/test.jar  app.jar
+ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar
