@@ -2,7 +2,7 @@
 set -x
 echo Run gradle check before push to remote repository...
 
-./gradlew clean check
+./gradlew build
 
 #
 # A git hook to run git-secrets (locally 'installed') against a repository.
